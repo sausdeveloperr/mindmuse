@@ -1,0 +1,79 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    background-color: #e6eded;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    width: min(75%, 900px);
+    margin: 0 auto;
+    margin-bottom: 3em;
+    padding: 5em 3em;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgb(112, 31, 31);
+    backdrop-filter: blur(10px);
+}
+
+.card {
+    margin-bottom: 2em;
+}
+
+.quote {
+    margin-bottom: .75em;
+    font-size: x-large;
+    display: inline-block;
+    max-width: 650px;
+}
+
+.author {
+    margin-bottom: .5em;
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+button {
+    all: unset;
+    padding: .5em 1em !important;
+    font-family: "Source Sans 3", sans-serif;
+    color: #e6eded;
+    cursor: pointer;
+    background-color: rgb(112, 31, 31);
+    border-radius: 7px;
+    box-shadow: 0 0 0 0 rgb(112, 31, 31);
+    animation: pulse 1.75s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+button:focus {
+    border: #e6eded solid 1px;
+}
+
+.sign {
+    scale: 5;
+    transform: rotate(180deg) translateX(70px) translateY(-13px);
+}
+
+.signBelow {
+    scale: 5;
+    transform: translateX(70px) translateY(13px);
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 10px rgb(212, 197, 197);
+    }
+}
